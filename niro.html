@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Logistic and Transport System</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Logistic and Transport System</h1>
+  </header>
+  <main>
+    <div id="shipment-tracking">
+      <h2>Shipment Tracking</h2>
+      <form>
+        <label for="tracking-number">Tracking Number:</label>
+        <input type="text" id="tracking-number" required>
+        <button type="submit" onclick="trackShipment(event)">Track</button>
+      </form>
+      <div id="tracking-results"></div>
+    </div>
+    <div id="new-order">
+      <h2>New Order & Billing</h2>
+      <form>
+        <label for="order-id">Order ID:</label>
+        <input type="text" id="order-id" required>
+        <label for="customer-name">Customer Name:</label>
+        <input type="text" id="customer-name" required>
+        <label for="billing-address">Billing Address:</label>
+        <input type="text" id="billing-address" required>
+        <button type="submit" onclick="placeOrder(event)">Place Order</button>
+      </form>
+    </div>
+    <div id="rate-options">
+      <h2>Rate Options</h2>
+      <ul id="rates"></ul>
+    </div>
+  </main>
+</body>
+</html>
